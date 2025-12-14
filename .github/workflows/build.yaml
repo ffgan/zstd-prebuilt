@@ -31,6 +31,7 @@ jobs:
           mv bazel-out/darwin_arm64-opt/bin/external/zstd\~/zstd_cli zstd_darwin_arm64
           mv bazel-out/darwin_amd64-opt/bin/external/zstd\~/zstd_cli zstd_darwin_amd64
           mv bazel-out/linux_arm64_musl-opt/bin/external/zstd\~/zstd_cli zstd_linux_arm64
+          mv bazel-out/linux_riscv64_musl_zig-opt/bin/external/zstd\~/zstd_cli zstd_linux_riscv64
           mv bazel-bin/external/zstd\~/zstd_cli  zstd_linux_amd64
       - uses: actions/upload-artifact@v4
         id: upload
@@ -41,6 +42,7 @@ jobs:
             zstd_darwin_arm64
             zstd_darwin_amd64
             zstd_linux_arm64
+            zstd_linux_riscv64
             zstd_linux_amd64
   # build_windows:
   #   name: windows
