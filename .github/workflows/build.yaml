@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-go@v5
       - run: go install github.com/bazelbuild/buildtools/buildozer@latest
       - run: |
-          bazel build //:for_all_platforms
+          bazelisk build //:for_all_platforms
           mv bazel-out/darwin_arm64-opt/bin/external/zstd\~/zstd_cli zstd_darwin_arm64
           mv bazel-out/darwin_amd64-opt/bin/external/zstd\~/zstd_cli zstd_darwin_amd64
           mv bazel-out/linux_arm64_musl-opt/bin/external/zstd\~/zstd_cli zstd_linux_arm64

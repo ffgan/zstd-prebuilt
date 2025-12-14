@@ -20,10 +20,10 @@ archive_override(
         """buildozer 'add deps @zlib//:zlib' :zstd_cli""",
         """buildozer 'add defines ZSTD_GZCOMPRESS ZSTD_GZDECOMPRESS' :zstd_cli""", 
         # For lzma, .xz
-        """buildozer 'new bazel_dep xz' MODULE.bazel:%""", 
-        """buildozer 'set version 5.4.5.bcr.5' MODULE.bazel:xz""",
-        """buildozer 'add deps @xz//:lzma' :zstd_cli""",
-        """buildozer 'add defines ZSTD_LZMACOMPRESS ZSTD_LZMADECOMPRESS' :zstd_cli""", 
+        # """buildozer 'new bazel_dep xz' MODULE.bazel:%""", 
+        # """buildozer 'set version 5.4.5.bcr.5' MODULE.bazel:xz""",
+        # """buildozer 'add deps @xz//:lzma' :zstd_cli""",
+        # """buildozer 'add defines ZSTD_LZMACOMPRESS ZSTD_LZMADECOMPRESS' :zstd_cli""", 
         # For lz4, .lz4
         """buildozer 'new bazel_dep lz4' MODULE.bazel:%""", 
         """buildozer 'set version 1.9.4' MODULE.bazel:lz4""",
