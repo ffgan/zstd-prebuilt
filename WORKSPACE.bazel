@@ -1,1 +1,15 @@
 # Marks this as the root of a Bazel workspace
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+
+http_archive(
+    name = "hermetic_cc_toolchain",
+    sha256 = "sha256:ee052df9f75fd9c3407df3896971f2ad72d8c702a3a3445334c4457059687267",
+    urls = [
+        "https://github.com/ffgan/hermetic_cc_toolchain/releases/download/v4.0.2/hermetic_cc_toolchain-v4.0.2.tar.gz"
+    ],
+)
+
+load("@hermetic_cc_toolchain//toolchain:defs.bzl", zig_toolchains = "toolchains")
+
+zig_toolchains()
