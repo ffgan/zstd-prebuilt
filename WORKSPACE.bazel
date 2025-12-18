@@ -4,7 +4,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "hermetic_cc_toolchain",
-    sha256 = "ee052df9f75fd9c3407df3896971f2ad72d8c702a3a3445334c4457059687267",
+    sha256 = "53af1e42d1d57dd9022d2edf6c972a76d124666de02f932e1292deb396e2e067",
     urls = [
         "https://github.com/ffgan/hermetic_cc_toolchain/releases/download/v4.0.2/hermetic_cc_toolchain-v4.0.2.tar.gz"
     ],
